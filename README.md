@@ -45,6 +45,35 @@ facturation Stripe intégrée, application iOS / Android pour les athlètes.
 
 *Projet co-développé. Code propriétaire — non open source.*
 
+### ☎️ [cucm-call-forwarding](https://github.com/NoaMatout/cucm-call-forwarding)
+
+Renvois d'appel inter-sites sur Cisco CUCM. Détection des chaînes et des
+boucles de renvoi, classification graduée de l'état réel des sites, et
+écritures compensées sur une API qui n'offre aucune transaction — avec
+vérification du rétablissement par relecture plutôt que par absence d'erreur.
+
+Python · AXL / SOAP · 83 tests, 91 % de couverture
+
+### 🔧 [ansible-server-management](https://github.com/NoaMatout/ansible-server-management)
+
+Gestion d'un parc mixte Windows / Linux : mises à jour Windows pilotées par
+Ansible en remplacement de WSUS (fenêtres de maintenance, déploiement par
+vagues, rapports) et provisionnement de VMs vSphere avec socle de base.
+
+Ansible · PowerShell · vSphere · ansible-lint profil production en CI
+
+### 🦠 [Malware_Analyzer](https://github.com/NoaMatout/Malware_Analyzer)
+
+Analyse de fichiers suspects via l'API VirusTotal v3. Recherche par SHA-256
+avant tout envoi : un fichier n'est transmis que si son empreinte est inconnue
+et que l'envoi est demandé explicitement.
+
+Python · VirusTotal API v3
+
+*Ces trois projets sont des réimplémentations génériques, écrites à partir de
+problèmes rencontrés en production. Ils ne contiennent aucune donnée
+d'infrastructure réelle.*
+
 ---
 
 ## Contact
