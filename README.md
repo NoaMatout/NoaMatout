@@ -26,8 +26,8 @@ VMware vSphere · Azure VMware Solution · Azure
 Veeam Backup & Replication
 
 **Sécurité**
-Durcissement système · analyse de malware · sécurité applicative
-(Supabase RLS, authentification, webhooks Stripe)
+Durcissement système · audit Active Directory · analyse de malware ·
+sécurité applicative (Supabase RLS, authentification, webhooks Stripe)
 
 ---
 
@@ -45,6 +45,26 @@ facturation Stripe intégrée, application iOS / Android pour les athlètes.
 
 *Projet co-développé. Code propriétaire — non open source.*
 
+### 🔧 [ansible-server-management](https://github.com/NoaMatout/ansible-server-management)
+
+Gestion d'un parc mixte Windows / Linux : mises à jour Windows pilotées par
+Ansible en remplacement de WSUS (fenêtres de maintenance, déploiement par
+vagues, rapports) et provisionnement de VMs vSphere avec socle de base.
+
+Ansible · PowerShell · vSphere · ansible-lint profil production en CI
+
+### 🔐 [powershell-ad-toolkit](https://github.com/NoaMatout/powershell-ad-toolkit)
+
+Suivi des audits Active Directory récurrents. Un rapport d'audit de mots de
+passe dit l'état du domaine, jamais sa trajectoire — le module le transforme
+en objets et classe chaque constat d'une semaine sur l'autre : corrigé,
+persistant, ou nouvelle régression. Une section vide (« vérifié, rien
+trouvé ») y est distinguée d'une section absente (« pas vérifié »), et les
+groupes de mots de passe partagés sont appariés sur leur composition plutôt
+que sur un numéro réattribué à chaque exécution.
+
+PowerShell · DSInternals · 41 tests Pester sur PowerShell 5.1 et 7
+
 ### ☎️ [cucm-call-forwarding](https://github.com/NoaMatout/cucm-call-forwarding)
 
 Renvois d'appel inter-sites sur Cisco CUCM. Détection des chaînes et des
@@ -54,14 +74,6 @@ vérification du rétablissement par relecture plutôt que par absence d'erreur.
 
 Python · AXL / SOAP · 83 tests, 91 % de couverture
 
-### 🔧 [ansible-server-management](https://github.com/NoaMatout/ansible-server-management)
-
-Gestion d'un parc mixte Windows / Linux : mises à jour Windows pilotées par
-Ansible en remplacement de WSUS (fenêtres de maintenance, déploiement par
-vagues, rapports) et provisionnement de VMs vSphere avec socle de base.
-
-Ansible · PowerShell · vSphere · ansible-lint profil production en CI
-
 ### 🦠 [Malware_Analyzer](https://github.com/NoaMatout/Malware_Analyzer)
 
 Analyse de fichiers suspects via l'API VirusTotal v3. Recherche par SHA-256
@@ -70,7 +82,7 @@ et que l'envoi est demandé explicitement.
 
 Python · VirusTotal API v3
 
-*Ces trois projets sont des réimplémentations génériques, écrites à partir de
+*Ces quatre projets sont des réimplémentations génériques, écrites à partir de
 problèmes rencontrés en production. Ils ne contiennent aucune donnée
 d'infrastructure réelle.*
 
